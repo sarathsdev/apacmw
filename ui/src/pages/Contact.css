@@ -1,0 +1,44 @@
+/* Main Container */
+.contact-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .contact-heading {
+    text-align: center;
+    font-size: 26px;
+    color: #003d82;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Card */
+  .contact-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Titles */
+  .contact-title {
+    font-size: 17px;
+    color: #0055a5;
+    margin-bottom: 10px;
+  }
+  
+  /* Email Links */
+  .contact-card a {
+    color: #003d82;
+    text-decoration: none;
+  }
+  
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+  

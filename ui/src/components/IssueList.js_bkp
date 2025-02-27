@@ -1,0 +1,120 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import './IssueList.css';
+
+const IssueList = () => {
+  const [issues, setIssues] = useState([]);
+  const [filters, setFilters] = useState({
+    productType: "",
+    issueType: "",
+    environment: "",
+  });
+
+  useEffect(() => {
+    const fetchIssues = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/api/issues");
+        setIssues(response.data);
+      } catch (err) {
+        console.error("Error fetching issues:", err);
+      }
+    };
+
+    fetchIssues();
+  }, []);
+
+  const handleFilterChange = (e) => {
+    const { name, value } = e.target;
+    setFilters({ ...filters, [name]: value });
+  };
+
+  const filteredIssues = issues.filter((issue) => {
+    const { productType, issueType, environment } = filters;
+    return (
+      (productType === "" || issue.productType === productType) &&
+      (issueType === "" || issue.issueType === issueType) &&
+      (environment === "" || issue.environment === environment)
+    );
+  });
+
+  return (
+    <div className="issue-list-container">
+      <h1 className="issue-list-heading">Issue List</h1>
+
+      {/* Filters */}
+      <form className="filter-form">
+        <div className="filter-grid">
+          {/* Product Type Filter */}
+          <div className="filter-item">
+            <label className="filter-label">Product Type:</label>
+            <select
+              name="productType"
+              value={filters.productType}
+              onChange={handleFilterChange}
+              className="filter-select"
+            >
+              <option value="">All</option>
+              <option value="WAS">WAS</option>
+              <option value="WLS">WLS</option>
+              <option value="Tomcat">Tomcat</option>
+              <option value="Apache">Apache</option>
+            </select>
+          </div>
+
+          {/* Issue Type Filter */}
+          <div className="filter-item">
+            <label className="filter-label">Issue Type:</label>
+            <select
+              name="issueType"
+              value={filters.issueType}
+              onChange={handleFilterChange}
+              className="filter-select"
+            >
+              <option value="">All</option>
+              <option value="Configuration">Configuration</option>
+              <option value="Application">Application</option>
+              <option value="Hardware/Performance">Hardware/Performance</option>
+              <option value="VTM">VTM</option>
+            </select>
+          </div>
+
+          {/* Environment Filter */}
+          <div className="filter-item">
+            <label className="filter-label">Environment:</label>
+            <select
+              name="environment"
+              value={filters.environment}
+              onChange={handleFilterChange}
+              className="filter-select"
+            >
+              <option value="">All</option>
+              <option value="DEV">DEV</option>
+              <option value="UAT">UAT</option>
+              <option value="PROD">PROD</option>
+              <option value="COB">COB</option>
+              <option value="ALL">ALL</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      {/* Issues Display */}
+      {filteredIssues.length === 0 ? (
+        <p className="no-issues-text">No issues found.</p>
+      ) : (
+        filteredIssues.map((issue, index) => (
+          <div key={index} className="issue-card">
+            <p><strong>Product Type:</strong> {issue.productType}</p>
+            <p><strong>Issue Type:</strong> {issue.issueType}</p>
+            <p><strong>Environment:</strong> {issue.environment}</p>
+            <p><strong>Problem:</strong> {issue.problemStatement}</p>
+            <p><strong>Solution:</strong> {issue.solution}</p>
+            <p><strong>Fix Type:</strong> {issue.fixType}</p>
+          </div>
+        ))
+      )}
+    </div>
+  );
+};
+
+export default IssueList;

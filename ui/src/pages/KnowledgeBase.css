@@ -1,0 +1,16 @@
+/* KnowledgeBase.css */
+
+/* Main container for Knowledge Base */
+.knowledge-base-container {
+  padding: 5px; /* Tailwind 'p-4' */
+}
+
+/* Header section with space between button and other content */
+.knowledge-base-header {
+  display: flex;
+  justify-content: space-between; /* Ensure content is spread across */
+  align-items: center;
+  margin-bottom: 16px; /* Tailwind 'mb-4' */
+}
+
+

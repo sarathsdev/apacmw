@@ -1,0 +1,241 @@
+/* Container Styling */
+.issue-list-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 1px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.issue-list-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.clear-btn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 12px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.clear-btn:hover {
+  background: #e60000;
+}
+
+/* Search Bar Container */
+.search-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  gap: 10px;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar Input */
+.search-bar {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+}
+
+/* Search Button */
+.search-button {
+  padding: 5px 20px;
+  background-color: #003d82; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-bar-container {
+  position: relative;
+}
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%; /* Position just below the input field */
+  left: 0;
+  background: rgba(184, 159, 159, 0.479); 
+  color: #201e1e; 
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Soft shadow with more depth */
+  border-radius: 8px;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Adds a subtle blur */
+  transition: all 0.3s ease-in-out;
+}
+
+.suggestions-dropdown li {
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e3c3c; /* Soft light gray font */
+  transition: background-color 0.3s, transform 0.3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator between items */
+}
+
+.suggestions-dropdown li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter on hover */
+  transform: translateX(5px); /* Subtle slide effect */
+  color: #FFFFFF; /* White text on hover for contrast */
+}
+
+.suggestions-dropdown li:active {
+  background-color: rgba(255, 255, 255, 0.15); /* Active suggestion with stronger highlight */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .suggestions-dropdown {
+    max-height: 200px;
+  }
+
+  .suggestions-dropdown li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .suggestions-dropdown {
+    left: 50%;
+    transform: translateX(-50%); /* Center the dropdown on mobile */
+  }
+}
+
+
+
+
+
+
+/* Issue Card Styling */
+.issue-card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.issue-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.issue-card strong {
+  color: #333;
+}
+
+/* No Issues Text */
+.no-issues-text {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .issue-list-container {
+    padding: 15px;
+  }
+
+  .search-bar-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .search-bar, .search-button {
+    width: 100%;
+  }
+}
+
+/* Container for the select product dropdown */
+.select-product-container {
+  margin-bottom: 20px; /* Add space below the select dropdown */
+  font-family: Arial, sans-serif;
+}
+
+/* Label for the select product dropdown */
+.select-product-label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  font-weight: 600;
+  display: block;
+}
+
+/* Styling for the select dropdown */
+.select-product {
+
+  padding-left: 25px;
+  padding-top: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 200px; /* Limit the width of the select box */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Text color */
+  transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Add some styles for hover and focus states */
+.select-product:hover {
+  border-color: #007bff; /* Highlight border color on hover */
+  background-color: #f0f0f0; /* Lighten background on hover */
+}
+
+.select-product:focus {
+  outline: none; /* Remove default outline */
+  border-color: #0056b3; /* Darker blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a soft blue shadow on focus */
+}
+
+/* Add a little padding to the select options */
+.select-product option {
+  padding: 10px; /* Padding inside options */
+  font-size: 1rem; /* Same font size as the select box */
+}
+
+/* Mobile responsiveness: Make the select box full width on smaller screens */
+@media (max-width: 600px) {
+  .select-product {
+    max-width: 100%; /* Full width on mobile screens */
+  }
+}

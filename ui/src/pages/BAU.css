@@ -1,0 +1,61 @@
+/* Main Container */
+.bau-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .bau-heading {
+    text-align: center;
+    font-size: 24px;
+    color: #003d82;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual Activity Cards */
+  .bau-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Titles */
+  .bau-title {
+    font-size: 19px;
+    color: #0055a5;
+    margin-bottom: 10px;
+  }
+  
+  /* List Items */
+  .bau-card ul {
+    padding-left: 20px;
+  }
+  
+  .bau-card li {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  /* Buttons */
+  .bau-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #003d82;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bau-button:hover {
+    background-color: #0055a5;
+  }
+  

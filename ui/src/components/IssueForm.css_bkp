@@ -1,0 +1,92 @@
+/* Container for the whole form */
+.issue-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Heading styling */
+.issue-form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form container for inputs, making it vertically aligned */
+.issue-form-grid {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  gap: 15px; /* Space between form elements */
+}
+
+/* Input group styling */
+.issue-form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.issue-form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input fields styling */
+.issue-form-select,
+.issue-form-textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Textarea styling for problem/solution */
+.issue-form-textarea {
+  resize: none; /* Prevent resizing */
+}
+
+/* Button group styling */
+.issue-form-button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Submit and Clear buttons styling */
+.issue-form-button-submit,
+.issue-form-button-clear {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Submit button specific styles */
+.issue-form-button-submit {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+/* Clear button specific styles */
+.issue-form-button-clear {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+/* Hover effect for submit button */
+.issue-form-button-submit:hover {
+  background-color: #218838; /* Darker green */
+}
+
+/* Hover effect for clear button */
+.issue-form-button-clear:hover {
+  background-color: #c82333; /* Darker red */
+}
