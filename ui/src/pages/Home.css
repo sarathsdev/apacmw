@@ -181,3 +181,129 @@ body {
   border-left: 2px solid white;
   padding-left: 1rem;
 }
+
+/* Responsive styles for tablets and mobile devices */
+@media (max-width: 768px) {
+  /* Main Content */
+  .main-content {
+    margin-top: 0; /* Reset negative margin on smaller screens */
+    padding: 10px;
+  }
+
+  /* Home Container */
+  .home-container {
+    padding: 15px;
+  }
+
+  /* Welcome Section */
+  .welcome-section {
+    padding: 30px 15px;
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-section p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  /* Carousel Section */
+  .carousel-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-card {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .logo-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .carousel-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-link {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+
+  /* Sidebar */
+  .expanded {
+    width: 12rem; 
+  }
+
+  .collapsed {
+    width: 3rem;
+  }
+
+  .sidebar-toggle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Main Content */
+  .main-content {
+    padding: 8px;
+  }
+
+  /* Welcome Section */
+  .welcome-section {
+    padding: 20px 10px;
+  }
+
+  .welcome-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-section p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  /* Carousel Section */
+  .carousel-card {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .carousel-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .product-link {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  /* Sidebar */
+  .expanded {
+    width: 10rem;
+  }
+
+  .collapsed {
+    width: 2.5rem;
+  }
+
+  .sidebar-toggle {
+    font-size: 1.2rem;
+  }
+}

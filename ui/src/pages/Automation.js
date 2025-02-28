@@ -16,7 +16,7 @@ const Automation = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/tasks");
+        const response = await axios.get("https://apacmw.onrender.com/api/tasks");
         setTasks(response.data);
       } catch (error) {
         console.error("Error fetching tasks:", error);
@@ -30,7 +30,7 @@ const Automation = () => {
   useEffect(() => {
     const fetchLogs = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/logs");
+        const response = await axios.get("https://apacmw.onrender.com/api/logs");
         setLogs(response.data);
       } catch (error) {
         console.error("Error fetching logs:", error);
@@ -62,7 +62,7 @@ const Automation = () => {
 
   return (
     <div className="automation-page-container">
-      <h1 className="automation-page-heading">Middleware Automation Dashboard</h1>
+      <h1 className="automation-page-heading">Automation Dashboard</h1>
 
       {/* Task Scheduling Section */}
       <div className="task-scheduling-container">

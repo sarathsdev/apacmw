@@ -15,10 +15,10 @@ const Access = () => {
   // Fetch data from API (Dummy API Calls)
   const fetchData = async () => {
     try {
-      const cmpResponse = await axios.get("http://localhost:5000/api/cmp");
-      const hostGroupResponse = await axios.get("http://localhost:5000/api/hostgroups");
-      const dapResponse = await axios.get("http://localhost:5000/api/dap");
-      const ouResponse = await axios.get("http://localhost:5000/api/ou");
+      const cmpResponse = await axios.get("https://apacmw.onrender.com/api/cmp");
+      const hostGroupResponse = await axios.get("https://apacmw.onrender.com/api/hostgroups");
+      const dapResponse = await axios.get("https://apacmw.onrender.com/api/dap");
+      const ouResponse = await axios.get("https://apacmw.onrender.com/api/ou");
 
       setCmpEntries(cmpResponse.data);
       setHostGroups(hostGroupResponse.data);
@@ -36,26 +36,7 @@ const Access = () => {
       {/* CMP Entries Table */}
       <section className="iaccess-section">
         <h2 className="section-heading">CMP Entries</h2>
-        <table className="iaccess-table">
-          <thead>
-            <tr>
-              <th>Server Name</th>
-              <th>IP Address</th>
-              <th>Owner</th>
-              <th>Environment</th>
-            </tr>
-          </thead>
-          <tbody>
-            {cmpEntries.map((entry, index) => (
-              <tr key={index}>
-                <td>{entry.serverName}</td>
-                <td>{entry.ip}</td>
-                <td>{entry.owner}</td>
-                <td>{entry.environment}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        
       </section>
 
       {/* Host Groups Section */}
@@ -92,3 +73,27 @@ const Access = () => {
 };
 
 export default Access;
+
+
+/* 
+<table className="iaccess-table">
+          <thead>
+            <tr>
+              <th>Server Name</th>
+              <th>IP Address</th>
+              <th>Owner</th>
+              <th>Environment</th>
+            </tr>
+          </thead>
+          <tbody>
+            {cmpEntries.map((entry, index) => (
+              <tr key={index}>
+                <td>{entry.serverName}</td>
+                <td>{entry.ip}</td>
+                <td>{entry.owner}</td>
+                <td>{entry.environment}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table> 
+*/
