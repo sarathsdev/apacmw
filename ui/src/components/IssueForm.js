@@ -22,7 +22,7 @@ const IssueForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/issues/save", formData);
+      const response = await axios.post("https://apacmw.onrender.com/api/issues/save", formData);
       alert("Issue saved successfully!");
       console.log(response.data);
     } catch (err) {
@@ -51,11 +51,11 @@ const IssueForm = () => {
               <option value="WAS">WebSphere</option>
               <option value="WLS">WebLogic</option>
               <option value="Tomcat">Tomcat</option>
-              <option value="Apache">Apache</option>
-              <option value="IHS">IHS</option>
-              <option value="OHS">OHS</option>
+              <option value="Apache">Apache HTTP Server</option>
+              <option value="IHS">IBM HTTP Server</option>
+              <option value="OHS">Oracle HTTP Server</option>
               <option value="Nginx">Nginx</option>
-              <option value="Liberty">Liberty</option>
+              <option value="Liberty">Websphere Liberty</option>
             </select>
           </div>
 

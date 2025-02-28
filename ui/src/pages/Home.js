@@ -28,7 +28,7 @@ export default function Home() {
             
             {/* Header Section */}
             <header className="welcome-section">
-                <h1>Welcome to the APAC Middleware Team </h1>
+                <h1>Welcome to Middleware Team </h1>
                 <p>
                     We ensures the seamless deployment, maintenance, and optimization
                     of enterprise middleware solutions. We specialize in web servers, application servers,
