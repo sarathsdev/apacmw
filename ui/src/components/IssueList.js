@@ -12,7 +12,7 @@ const IssueList = () => {
   useEffect(() => {
     const fetchIssues = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/issues");
+        const response = await axios.get("https://apacmw.onrender.com/api/issues");
         setIssues(response.data);
       } catch (err) {
         console.error("Error fetching issues:", err);
@@ -72,14 +72,14 @@ const IssueList = () => {
           className="select-product"
         >
           <option value="">All Products</option>
-          <option value="WAS">WebSphere</option>
-          <option value="WLS">WebLogic</option>
-          <option value="Tomcat">Tomcat</option>
-          <option value="Apache">Apache</option>
-          <option value="IHS">IHS</option>
-          <option value="OHS">OHS</option>
-          <option value="Nginx">Nginx</option>
-          <option value="Liberty">Liberty</option>
+              <option value="WAS">WebSphere</option>
+              <option value="WLS">WebLogic</option>
+              <option value="Tomcat">Tomcat</option>
+              <option value="Apache">Apache HTTP Server</option>
+              <option value="IHS">IBM HTTP Server</option>
+              <option value="OHS">Oracle HTTP Server</option>
+              <option value="Nginx">Nginx</option>
+              <option value="Liberty">Websphere Liberty</option>
         </select>
       </div>
 
