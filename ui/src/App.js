@@ -22,18 +22,27 @@ const Sidebar = ({ isOpen, toggleDrawer }) => {
       <ul className="sidebar-links">
         <li><a href=""><HomeIcon size={20} />Confluence</a></li>
         <li><a href=""><Settings size={20} /> WAIS</a></li>
-        <li><a href=""><Wrench size={20} />Service Now</a></li>
+        <li><a href=""><Wrench size={20} />SaaS Service Now</a></li>
+        <li><a href=""><Wrench size={20} />Cyberark Portal</a></li>
+        <li><a href=""><Wrench size={20} />Server Info</a></li>
+        <li><a href=""><Wrench size={20} />Power BI</a></li>
+        <li><a href=""><Wrench size={20} />IRIS</a></li>
+        <li><a href=""><Wrench size={20} />Citi Market Place</a></li>
+        <li><a href=""><Wrench size={20} /></a>VTM tracker tool</li>
+        <li><a href=""><Wrench size={20} /></a>Justify IT</li>
+        <li><a href=""><Wrench size={20} /></a>Sharepoint</li>
+        <li><a href=""><Wrench size={20} /></a>CAS</li>
       </ul>
      
     </div>
   );
 };
 
-const Navbar = ({ toggleDrawer }) => {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <button className="menu-btn" onClick={toggleDrawer}><Menu size={28} /></button>
+        
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/knowledge-base">Knowledge Base</Link></li>
@@ -57,10 +66,10 @@ const App = () => {
       <div className="app-container">
         <header className="header">
           <div className="logo-container">
-            <img src={citiLogo} alt="Citi Bank Logo" className="logo" />
+            <img src={citiLogo} onClick={toggleDrawer} alt="Citi Bank Logo" className="logo" />
             <h1>APAC Middleware</h1>
           </div>
-          <Navbar toggleDrawer={toggleDrawer} />
+          <Navbar />
         </header>
         <Sidebar isOpen={drawerOpen} toggleDrawer={toggleDrawer} />
         <main className="main-content">
