@@ -28,7 +28,7 @@ export default function Home() {
             
             {/* Header Section */}
             <header className="welcome-section">
-                <h1>Welcome to Middleware Team </h1>
+                <h1>Middleware Greetings</h1>
                 <p>
                     We ensures the seamless deployment, maintenance, and optimization
                     of enterprise middleware solutions. We specialize in web servers, application servers,
@@ -44,7 +44,7 @@ export default function Home() {
             {/* Carousel Section */}
             <main id="carousel" className="carousel-container">
                 <h2>Our Middleware Solutions</h2>
-                <Carousel responsive={responsive} infinite autoPlay  arrows={false} autoPlaySpeed={3000}>
+                <Carousel responsive={responsive} infinite autoPlay  arrows={false} autoPlaySpeed={1400}>
                     {products.map((product, index) => (
                         <div className="carousel-card" key={index}>
                             <div className="logo-container">

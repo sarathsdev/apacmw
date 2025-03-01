@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
-import { Menu, Home as HomeIcon, Settings, Wrench } from "lucide-react";
+import {  Dot} from "lucide-react";
 
 import "./App.css";
 import citiLogo from "./citibank-logo.png";
@@ -20,18 +20,18 @@ const Sidebar = ({ isOpen, toggleDrawer }) => {
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
       <button className="close-btn" onClick={toggleDrawer}>✖</button>
       <ul className="sidebar-links">
-        <li><a href=""><HomeIcon size={20} />Confluence</a></li>
-        <li><a href=""><Settings size={20} /> WAIS</a></li>
-        <li><a href=""><Wrench size={20} />SaaS Service Now</a></li>
-        <li><a href=""><Wrench size={20} />Cyberark Portal</a></li>
-        <li><a href=""><Wrench size={20} />Server Info</a></li>
-        <li><a href=""><Wrench size={20} />Power BI</a></li>
-        <li><a href=""><Wrench size={20} />IRIS</a></li>
-        <li><a href=""><Wrench size={20} />Citi Market Place</a></li>
-        <li><a href=""><Wrench size={20} /></a>VTM tracker tool</li>
-        <li><a href=""><Wrench size={20} /></a>Justify IT</li>
-        <li><a href=""><Wrench size={20} /></a>Sharepoint</li>
-        <li><a href=""><Wrench size={20} /></a>CAS</li>
+        <li><a href="">< Dot size={20} />Confluence</a></li>
+        <li><a href="">< Dot size={20} /> WAIS</a></li>
+        <li><a href="">< Dot size={20} />SaaS Service Now</a></li>
+        <li><a href="">< Dot size={20} />Cyberark Portal</a></li>
+        <li><a href="">< Dot size={20} />Server Info</a></li>
+        <li><a href="">< Dot size={20} />Power BI</a></li>
+        <li><a href="">< Dot size={20} />IRIS</a></li>
+        <li><a href="">< Dot size={20} />Citi Market Place</a></li>
+        <li><a href="">< Dot size={20} /></a>VTM tracker tool</li>
+        <li><a href="">< Dot size={20} /></a>Justify IT</li>
+        <li><a href="">< Dot size={20} /></a>Sharepoint</li>
+        <li><a href="">< Dot size={20} /></a>CAS</li>
       </ul>
      
     </div>

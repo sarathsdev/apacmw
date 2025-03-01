@@ -267,6 +267,7 @@ h1 {
   /* Sidebar */
   .sidebar {
     width: 200px;
+  
   }
 
   .sidebar li {
@@ -308,6 +309,7 @@ h1 {
   flex-direction: column;
   gap: 1rem;
   z-index: 10;
+  overflow-y: auto; /* Enables scrolling */
 }
 
 .sidebar.open {
@@ -321,8 +323,8 @@ h1 {
 }
 
 .sidebar li {
-  padding: 15px 20px ;
-  margin-right: 50px;
+  padding: 15px 15px ;
+  margin-right: 40px;
   display: flex;
   align-items: center;
   gap: 10px;
