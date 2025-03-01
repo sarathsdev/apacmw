@@ -34,7 +34,7 @@ body {
 .logo {
   height: 48px;
   margin-right: 0.2rem;
-  padding-left: 1rem;
+  padding-left: 240px;
 }
 
 
@@ -257,7 +257,7 @@ h1 {
   .logo {
     height: 40px;
     margin: 0;
-    padding-left: 240px; 
+    padding-left: 540px; 
   }
 
   h1 {
