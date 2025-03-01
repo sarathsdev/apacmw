@@ -309,7 +309,7 @@ h1 {
     height: 100%;
     background-color: #003d82;
     color: white;
-    padding-top: 60px;
+    padding-top: 50px;
     transition: left 0.3s ease-in-out;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -330,7 +330,7 @@ h1 {
   height: 100%;
   background-color: #003d82;
   color: white;
-  padding-top: 60px;
+  padding-top: 50px;
   transition: left 0.3s ease-in-out;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   display: flex;
