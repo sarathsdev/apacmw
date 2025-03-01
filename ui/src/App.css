@@ -257,7 +257,8 @@ h1 {
   .logo {
     height: 35px;
     margin: 0;
-    padding-left: 340px; 
+    padding-left: 200px; 
+    padding-right:200px;
   }
 
   h1 {
