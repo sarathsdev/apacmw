@@ -256,9 +256,8 @@ h1 {
 
   .logo {
     height: 35px;
-    margin: 0;
-    padding-left: 200px; 
-    padding-right:200px;
+    margin-right: 200px; 
+  
   }
 
   h1 {
