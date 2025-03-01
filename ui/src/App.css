@@ -229,7 +229,8 @@ h1 {
   /* Navbar */
   .nav-links {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.4rem;
+    margin-right: 1cm;
   }
 
   .nav-links li {
@@ -254,7 +255,7 @@ h1 {
   
   .logo {
     height: 35px;
-    margin-right: 250px; 
+    margin-right: 245px; 
   
   }
 
